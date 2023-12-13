@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 
 namespace CatWorx.BadgeMaker
@@ -34,7 +35,8 @@ namespace CatWorx.BadgeMaker
     static void Main(string[] args)
     {
       List<Employee> employees = GetEmployees();
-      PrintEmployees(employees);
+      Util.PrintEmployees(employees);
+      Util.MakeCSV(employees);
     }
   }
 }
